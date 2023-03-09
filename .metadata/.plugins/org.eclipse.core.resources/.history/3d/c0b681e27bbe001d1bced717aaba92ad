@@ -1,0 +1,5 @@
+package tiposDeDados;
+
+public class TipoFloat {
+
+}

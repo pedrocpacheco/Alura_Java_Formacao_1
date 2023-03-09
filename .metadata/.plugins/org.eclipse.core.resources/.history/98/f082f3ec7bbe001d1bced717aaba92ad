@@ -1,0 +1,13 @@
+package tiposDeDados;
+
+public class TipoFloat {
+
+	public class TipoFloat {
+		public static void main(String[] args) {
+			// float é um tipo de dado que também armazena flutuante, 
+			// mas chega a 6 casa decimais
+			
+			float pontoFlutuante = 3.14f; // quando escrevemos 3.14, o que é salvo é o Pi todo, com f de float depois não.
+		}
+	
+}
