@@ -20,6 +20,13 @@ public class Conta {
 		}
 	}
 	
+	public void transfere(double valor, Conta destino) {
+		if(this.saldo > valor) {
+			this.saldo -= valor;
+			destino.deposita(valor);
+		}
+	}
+	
 	public double getSaldo() {
 		return saldo;
 	}
