@@ -4,6 +4,11 @@ public class Gerente extends Funcionario {
 
 	private int senha;
 	
+	public Gerente(String nome, String cpf, double salario, int senha) {
+		super(nome, cpf, salario);
+		this.senha = senha;
+	}
+	
 	public int getSenha() {
 		return senha;
 	}
