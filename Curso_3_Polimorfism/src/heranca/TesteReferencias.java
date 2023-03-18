@@ -32,12 +32,19 @@ public class TesteReferencias {
 		g3.setSalario(5000.0);
 		
 		Funcionario f1 = new Funcionario();
-		f1.setSalario(0);
+		f1.setSalario(2000.0);
+		
+		EditorVideo e1 = new EditorVideo();
+		e1.setSalario(1000.00);
+			
+		System.out.println("Printando o Registro de Cada tipo de Funcionario");
 		
 		ControleBonificacao controle = new ControleBonificacao();
-		controle.registra(g3);
 		controle.registra(f1);
+		controle.registra(g3);
+		controle.registra(e1);
 		
+		// Printado a soma de todas as bonificações
 		System.out.println(controle.getSoma());
 		
 		
