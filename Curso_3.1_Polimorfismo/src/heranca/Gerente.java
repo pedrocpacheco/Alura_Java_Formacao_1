@@ -16,7 +16,7 @@ private int senha;
 	public int getSenha() {
 		return senha;
 	}
-	
+	 
 	public void setSenha(int senha) {
 		this.senha = senha;
 	}
@@ -34,7 +34,7 @@ private int senha;
 	@Override
 	public double getBonificacao() {
 		System.out.println("Chamado o metodo de Bonificação do Gerente");
-		return super.getBonificacao() + super.salario; // super é usado quando falamos de algo definido na superclasse
+		return 100; // super é usado quando falamos de algo definido na superclasse
 		// utilizamos o metodo da super classe dentro de um da sub
 	}
 	
