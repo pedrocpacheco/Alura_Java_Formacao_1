@@ -17,9 +17,8 @@ public abstract class Funcionario {
 		this.salario = salario;
 	}
 	
-	public double getBonificacao() {
-		return this.salario * 0.10;
-	}
+	// Corpo do metodo sera feito pelos filhos
+	public abstract double getBonificacao();
 	
 	public String getNome() {
 		return nome;
