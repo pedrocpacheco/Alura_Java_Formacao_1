@@ -1,8 +1,8 @@
 package heranca;
 
-public class Gerente extends Funcionario {
+public class Gerente extends Funcionario{
 
-	private int senha;
+private int senha;
 	
 	public Gerente() {
 		
@@ -37,7 +37,5 @@ public class Gerente extends Funcionario {
 		return super.getBonificacao() + super.salario; // super é usado quando falamos de algo definido na superclasse
 		// utilizamos o metodo da super classe dentro de um da sub
 	}
-	
-	
 	
 }

@@ -1,6 +1,6 @@
 package heranca;
 
-public class EditorVideo extends Funcionario {
+public class EditorVideo extends Funcionario{
 
 	@Override
 	public double getBonificacao() {

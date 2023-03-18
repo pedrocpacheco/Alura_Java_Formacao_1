@@ -2,7 +2,7 @@ package heranca;
 
 public class TesteReferencias {
 
-	public static void main(String[] args) {
+public static void main(String[] args) {
 		
 		// 1- Referencia do Tipo Gerente -> Obj Gerente
 		Gerente g1 = new Gerente();

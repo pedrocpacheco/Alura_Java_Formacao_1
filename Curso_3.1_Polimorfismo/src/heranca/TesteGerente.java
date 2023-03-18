@@ -19,5 +19,5 @@ public class TesteGerente {
 		System.out.println(luane.getBonificacao());
 
 	}
-
+	
 }

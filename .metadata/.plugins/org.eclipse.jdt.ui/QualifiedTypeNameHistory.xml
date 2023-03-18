@@ -5,4 +5,5 @@
     <fullyQualifiedTypeName name="teste.Veiculo"/>
     <fullyQualifiedTypeName name="teste.Moto"/>
     <fullyQualifiedTypeName name="teste.Carro"/>
+    <fullyQualifiedTypeName name="bytebank.ContaPoupanca"/>
 </qualifiedTypeNameHistroy>

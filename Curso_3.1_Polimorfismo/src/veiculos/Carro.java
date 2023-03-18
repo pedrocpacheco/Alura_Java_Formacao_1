@@ -1,6 +1,6 @@
-package teste;
+package veiculos;
 
-public class Carro extends Veiculo {
+public class Carro extends Veiculo{
 
 	public void ligar() {
 		System.out.println("ligando carro");
