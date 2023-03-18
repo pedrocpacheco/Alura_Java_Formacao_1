@@ -18,6 +18,8 @@ public class TesteGerente {
 		// 4- Usando metodo "sobscrito" sem polimorfismo
 		System.out.println(luane.getBonificacao());
 
+		Autenticavel gerente = new Gerente();
+		
 	}
 	
 }

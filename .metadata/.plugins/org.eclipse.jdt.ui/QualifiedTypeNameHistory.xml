@@ -5,5 +5,9 @@
     <fullyQualifiedTypeName name="teste.Veiculo"/>
     <fullyQualifiedTypeName name="teste.Moto"/>
     <fullyQualifiedTypeName name="teste.Carro"/>
+    <fullyQualifiedTypeName name="bytebank.ContaCorrente"/>
     <fullyQualifiedTypeName name="bytebank.ContaPoupanca"/>
+    <fullyQualifiedTypeName name="heranca.SistemaInterno"/>
+    <fullyQualifiedTypeName name="heranca.Administrador"/>
+    <fullyQualifiedTypeName name="heranca.Autenticavel"/>
 </qualifiedTypeNameHistroy>
