@@ -31,7 +31,7 @@ public static void main(String[] args) {
 		Gerente g3 = new Gerente();
 		g3.setSalario(5000.0);
 		
-		Funcionario f1 = new Funcionario();
+		Funcionario f1 = new Gerente();
 		f1.setSalario(2000.0);
 		
 		EditorVideo e1 = new EditorVideo();
