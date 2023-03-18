@@ -26,9 +26,16 @@ public class Gerente extends Funcionario {
 		
 		}
 	
-	// Reescrita de metodos
+	// 1- Reescrita de metodos
 	public double getBonificacao() {
-		return super.salario;
+		return super.salario; // super é usado quando falamos de algo definido na superclasse
+		
 	}
+	
+	// 2- utilizando super.metodo
+	public double getBonfiicacaoComSuper() {
+		return super.getBonificacao() + super.getSalario();
+	} // utilizamos o metodo da super classe dentro de um da sub
+	
 	
 }
