@@ -27,6 +27,20 @@ public class TesteReferencias {
 		 * Ela não connsegue utilizar metodos de gerente
 		 */
 		
+		// 3- Criando ControleBonificação para enteder o Polimorfismo
+		Gerente g3 = new Gerente();
+		g3.setSalario(5000.0);
+		
+		Funcionario f1 = new Funcionario();
+		f1.setSalario(0);
+		
+		ControleBonificacao controle = new ControleBonificacao();
+		controle.registra(g3);
+		controle.registra(f1);
+		
+		System.out.println(controle.getSoma());
+		
+		
 	}
 	
 }
