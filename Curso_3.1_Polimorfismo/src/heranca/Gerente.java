@@ -3,6 +3,7 @@ package heranca;
 public class Gerente extends Funcionario implements Autenticavel{
 
 private int senha;
+private Autenticador autenticador;
 	
 	public Gerente() {
 		
@@ -11,6 +12,7 @@ private int senha;
 	public Gerente(String nome, String cpf, double salario, int senha) {
 		super(nome, cpf, salario);
 		this.senha = senha;
+		this.autenticador = new Autenticador();
 	}
 	
 	public int getSenha() {
@@ -18,7 +20,7 @@ private int senha;
 	}
 	 
 	public void setSenha(int senha) {
-		this.senha = senha;
+		this.autenticador.setSenha(senha);
 	}
 	
 	public boolean autentica(int senha) {
