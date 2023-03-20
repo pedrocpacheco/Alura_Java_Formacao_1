@@ -2,17 +2,29 @@ package classes;
 
 import excecoes.IntInvalidoException;
 
-public class ContaPoupanca extends Conta implements InvestirDesinvestir{
+public class ContaCorrente extends Conta implements InvestirDesinvestir{
 
 	int saldo;
 	Investidor investidor;
-
-	public ContaPoupanca() {
+	
+	// Construtor
+	public ContaCorrente() {
 		this.investidor = new Investidor();
 	}
 	
-	// Metodos da Classe Abstrata
+	// Metodos Interface
+	@Override
+	public void investir(int valor) {
+		this.investidor.investir(valor);
+	}
+
+	@Override
+	public void desisvestir(int valor) {
+		this.investidor.desisvestir(valor);
+		
+	}
 	
+	// Metodos Unicos
 	public void setSaldo(int valor) {
 		if(saldo < 0) {
 			throw new IntInvalidoException("Seu saldo é invalido mutchacho");
@@ -24,25 +36,13 @@ public class ContaPoupanca extends Conta implements InvestirDesinvestir{
 	public int getSaldo() {
 		return this.saldo;
 	}
-	
-	
-	// Metodos da Interface
-	@Override
-	public void investir(int valor) {
-		this.investidor.investir(valor);
-	}
 
-	@Override
-	public void desisvestir(int valor) {
-		this.investidor.desisvestir(valor);
-	}
-
-
+	// Metodo Herdado
 	@Override
 	public String getExecucao() {
-		String execucao = "Você executou uma Conta Poupanca!";
+		String execucao = "Você executou uma Conta Corrente";
 		return execucao;
 	}
-		
+
 	
 }

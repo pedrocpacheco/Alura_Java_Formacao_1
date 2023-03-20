@@ -14,8 +14,7 @@ public abstract class Conta {
 		
 	}
 	
-	public abstract void setSaldo(double valor);
-	public abstract double getSaldo();
+	public abstract String getExecucao();
 	
 	public Conta(String agencia, int numero) {
 		Conta.total++;
