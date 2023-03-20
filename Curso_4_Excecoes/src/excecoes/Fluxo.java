@@ -18,6 +18,7 @@ public class Fluxo {
 		System.out.println("Inicio metodo 2");
 		for(int i = 1; i <= 5; i++) {
 			System.out.println(i);
+			int a = i / 0;
 		}
 		System.out.println("Fim do metodo 2");
 	}
