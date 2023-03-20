@@ -30,6 +30,7 @@ private int senha;
 		
 		}
 	
+	
 	// 1- Reescrita de metodos
 	@Override
 	public double getBonificacao() {
