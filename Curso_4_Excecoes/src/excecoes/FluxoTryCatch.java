@@ -1,12 +1,12 @@
 package excecoes;
 
-public class Fluxo {
+public class FluxoTryCatch {
 
 	public static void main(String[] args) {
 		System.out.println("Inicio do Main");
 		try {
 			metodo1();
-		} catch(ArithmeticException | NullPointerException | MinhaExcecao e) {
+		} catch(ArithmeticException | NullPointerException e) {
 			String msg = e.getMessage();
 			System.out.println("Exception " + msg);
 			e.printStackTrace();
@@ -23,10 +23,14 @@ public class Fluxo {
 
 	public static void metodo2() {
 		System.out.println("Inicio metodo 2");
-		
-		throw new MinhaExcecao("Deu muito errado");
-		
-		// System.out.println("Fim do metodo 2");
+		for (int i = 1; i <= 5; i++) {
+			System.out.println(i);
+				// int a = i / 0;
+				Classe c = null;
+				c.deposita();
+	
+		}
+		System.out.println("Fim do metodo 2");
 	}
 
 }

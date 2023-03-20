@@ -1,6 +1,6 @@
 package excecoes;
 
-public class Conta {
+public class Classe {
 	
 	void deposita() {
 		
