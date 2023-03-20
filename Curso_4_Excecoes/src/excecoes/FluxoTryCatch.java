@@ -6,7 +6,7 @@ public class FluxoTryCatch {
 		System.out.println("Inicio do Main");
 		try {
 			metodo1();
-		} catch(ArithmeticException | NullPointerException e) {
+		} catch(ArithmeticException | NullPointerException | MinhaExcecao e) {
 			String msg = e.getMessage();
 			System.out.println("Exception " + msg);
 			e.printStackTrace();
@@ -15,13 +15,13 @@ public class FluxoTryCatch {
 		System.out.println("Fim do Main");
 	}
 
-	public static void metodo1() {
+	public static void metodo1() throws MinhaExcecao {
 		System.out.println("Inicio metodo 1");
 		metodo2();
 		System.out.println("Fim do metodo 1");
 	}
 
-	public static void metodo2() {
+	public static void metodo2() throws MinhaExcecao {
 		System.out.println("Inicio metodo 2");
 		for (int i = 1; i <= 5; i++) {
 			System.out.println(i);

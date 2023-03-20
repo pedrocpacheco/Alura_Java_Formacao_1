@@ -2,7 +2,7 @@ package excecoes;
 
 public class Classe {
 	
-	void deposita() {
+	void deposita() throws MinhaExcecao{
 		
 	}
 	
