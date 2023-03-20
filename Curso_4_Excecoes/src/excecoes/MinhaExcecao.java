@@ -1,6 +1,6 @@
 package excecoes;
 
-public class MinhaExcecao extends RuntimeException{
+public class MinhaExcecao extends Exception{
 
 	public MinhaExcecao(String s) {
 		super(s);
