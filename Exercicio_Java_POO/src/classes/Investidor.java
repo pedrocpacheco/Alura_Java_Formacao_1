@@ -1,17 +1,18 @@
 package classes;
 
+
 public class Investidor implements InvestirDesinvestir{
 
-	int saldo;
+	 int saldo;
 	
 	@Override
-	public void investir(int valor) {
-		this.saldo += valor*10;
+	public int investir(int valor) {
+		return this.saldo += valor*10;
 	}
 
 	@Override
-	public void desisvestir(int valor) {
-		this.saldo -= valor*10;
+	public int desisvestir(int valor) {
+		return this.saldo -= valor*10;
 	}
 	
 }

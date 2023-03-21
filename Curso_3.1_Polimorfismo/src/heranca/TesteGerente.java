@@ -19,6 +19,14 @@ public class TesteGerente {
 		System.out.println(luane.getBonificacao());
 
 		Autenticavel gerente = new Gerente();
+	
+		Administrador pedro = new Administrador();
+		
+		pedro.setSalario(2000);
+		pedro.setSenha(12);
+		
+		System.out.println(pedro.autentica(12));
+		
 		
 	}
 	

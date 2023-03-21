@@ -5,8 +5,9 @@ import excecoes.StringInvalidaException;
 
 public class Cliente implements AutoCloseable {
 
-	String nome;
-	int idade;
+	private String nome;
+	private int idade;
+	
 	
 	public String getNome() {
 		return this.nome;

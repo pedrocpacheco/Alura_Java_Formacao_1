@@ -2,36 +2,36 @@ package classes;
 
 import excecoes.IntInvalidoException;
 
-public class ContaCorrente extends Conta implements InvestirDesinvestir{
+public class ContaCorrente extends Conta implements InvestirDesinvestir {
 
-	int saldo;
-	Investidor investidor;
-	
+	private int saldo;
+	private Investidor investidor;
+
 	// Construtor
-	public ContaCorrente() {
+	public ContaCorrente(String agencia, int numero) {
+		super(agencia, numero);
 		this.investidor = new Investidor();
 	}
-	
+
 	// Metodos Interface
 	@Override
-	public void investir(int valor) {
-		this.investidor.investir(valor);
+	public int investir(int valor) {
+		return this.saldo += this.investidor.investir(valor);
 	}
 
 	@Override
-	public void desisvestir(int valor) {
-		this.investidor.desisvestir(valor);
-		
-	}
-	
-	// Metodos Unicos
-	public void setSaldo(int valor) {
-		if(saldo < 0) {
-			throw new IntInvalidoException("Seu saldo é invalido mutchacho");
-		}
-		this.saldo = valor + 100;
+	public int desisvestir(int valor) {
+		return this.investidor.desisvestir(valor);
+
 	}
 
+	// Metodos Unicos
+	public void setSaldo(int valor) {
+		if (saldo < 0) {
+			throw new IntInvalidoException("Seu saldo é invalido mutchacho");
+		}
+		this.saldo = valor + 200;
+	}
 
 	public int getSaldo() {
 		return this.saldo;
@@ -44,5 +44,4 @@ public class ContaCorrente extends Conta implements InvestirDesinvestir{
 		return execucao;
 	}
 
-	
 }

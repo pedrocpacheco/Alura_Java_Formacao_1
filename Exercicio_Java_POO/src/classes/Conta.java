@@ -5,31 +5,31 @@ import excecoes.StringInvalidaException;
 
 public abstract class Conta {
 
-	Cliente titular;
-	String agencia;
-	int numero;
-	static int total;
+	protected Cliente titular;
+	private String agencia;
+	private int numero;
+	protected static int total;
 	
-	public Conta() {
-		
-	}
+	
 	
 	public abstract String getExecucao();
 	
 	public Conta(String agencia, int numero) {
 		Conta.total++;
-		System.out.println("Existem atualmente " + Conta.total + ", contas!");
+		System.out.println("Existem atualmente: " + Conta.total + ", contas!");
 		this.agencia = agencia;
 		this.numero = numero;
-		System.out.println("A Conta de numero" + this.numero + ", foi criada na agencia " + this.agencia);
+		System.out.println("A Conta de numero: " + this.numero + ", foi criada na agencia: " + this.agencia);
 	}
 	
 	public Cliente getTitular() {
 		return this.titular;
 	}
 	
-	public void setTitular(Cliente titular) {
-		this.titular = titular;
+	public void setTitular(String nome, int idade) throws StringInvalidaException {
+		this.titular = new Cliente();
+		this.titular.setNome(nome);
+		this.titular.setIdade(idade);
 	}
 	
 	public String getAgencia() {

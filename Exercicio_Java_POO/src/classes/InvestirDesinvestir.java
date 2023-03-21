@@ -2,8 +2,8 @@ package classes;
 
 public interface InvestirDesinvestir {
 
-	public void investir(int valor);
+	public int investir(int valor);
 	
-	public void desisvestir(int valor);
+	public int desisvestir(int valor);
 	
 }
