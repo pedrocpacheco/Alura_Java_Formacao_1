@@ -10,7 +10,9 @@ public class TesteExceptionChecked {
 		} catch(MinhaExcecao e) {
 			System.out.println("tratamento");
 		}
+	
 		
 	}
+	
 	
 }
