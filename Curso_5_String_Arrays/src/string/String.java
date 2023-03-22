@@ -13,12 +13,12 @@ public class String {
 		// Declaração -> Instanciação -> Inicalização (de forma direta)
 			
 		//String nome2 = new String("Pedro"); // Declarando, Instanciando ao objeto e Incializando
-		System.out.println(nome2); // Pritando
+		System.out.println(nome); // Pritando
 				
 		// Declaração -> Inicialização (Sem Instaciação a um Objeto)
 				
 		// String nome3 = "Pedro";
-		System.out.println(nome3);
+		System.out.println(nome);
 	}
 	
 }
