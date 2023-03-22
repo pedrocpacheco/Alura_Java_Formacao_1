@@ -1,5 +1,11 @@
 package br.com.bytebank.banco.modelo;
 
+/**
+ * Classe representa a moldura (Classe Abstrata) de uma Conta.
+ * 
+ * @author Pedro
+ *
+ */
 public abstract class Conta {
 
     protected double saldo;
@@ -12,6 +18,16 @@ public abstract class Conta {
     	
     }
     
+    /**
+     * Construtor da Classe Conta. Além de Construir a Conta com 2 parametros diretamente, ele:
+     * <ul> 
+     * 	<li>É responsavel por trackear o número total de Contas Criadas</li>
+     * 	<li>Imprimir o número da Conta que acabou de ser criada</li>
+     * </ul>  
+     *
+     * @param agencia
+     * @param numero
+     */
     public Conta(int agencia, int numero){
         Conta.total++;
         System.out.println("O total de contas é " + Conta.total);
@@ -30,6 +46,13 @@ public abstract class Conta {
         this.saldo -= valor;
     }
 
+    /**
+     * Transfere um valor de um objeto Conta para outro.
+     * Valor transferido não pode ser maior do que saldo da Conta que transfere
+     * @param valor
+     * @param destino
+     * @throws SaldoInsuficienteException
+     */
     public void transfere(double valor, Conta destino) throws SaldoInsuficienteException{
         this.saca(valor);
         destino.deposita(valor);
