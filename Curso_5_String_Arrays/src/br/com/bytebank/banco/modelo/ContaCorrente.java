@@ -11,8 +11,8 @@ public class ContaCorrente extends Conta {
 	}
 	
 	@Override
-	public boolean saca(double valor) {
-		return super.saca(valor + 0.20);
+	public void saca(double valor) throws SaldoInsuficienteException{
+		super.saca(valor + 0.20);
 	}
 		
     @Override

@@ -36,6 +36,11 @@ public abstract class Conta {
 		return agencia;
 	}
 	
+	/**Metodo feito para atributi valor para o atributo agencia
+	 * 
+	 * @param agencia
+	 * @throws StringInvalidaException
+	 */
 	public void setAgencia(String agencia) throws StringInvalidaException {
 		for(int i = 0; i < agencia.length(); i++) {
 			char ch = agencia.charAt(i);
