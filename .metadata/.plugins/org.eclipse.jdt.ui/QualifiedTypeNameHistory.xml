@@ -35,4 +35,5 @@
     <fullyQualifiedTypeName name="heranca.Administrador"/>
     <fullyQualifiedTypeName name="br.com.bytebank.banco.modelo.Conta"/>
     <fullyQualifiedTypeName name="br.com.bytebank.banco.modelo.ContaCorrente"/>
+    <fullyQualifiedTypeName name="br.com.bytebank.banco.modelo.ContaPoupanca"/>
 </qualifiedTypeNameHistroy>
