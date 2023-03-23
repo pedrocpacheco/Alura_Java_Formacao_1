@@ -21,5 +21,9 @@ public class ContaCorrente extends Conta {
     	
     }
 	
+    @Override
+    public String toString() {
+    	return super.toString() + "ContaCorrente, Numero: " + super.getNumero() + " | Agencia: " + super.getAgencia();
+    }
 	
 }

@@ -12,7 +12,7 @@ public class TesteString {
 		nome = nome.replace("P", "p"); // .replace nao muda Sr que usa ele
 		// podiamos ter salvo em outra variavel, com o String novoNovo = nome.replace("P", "p");
 		System.out.println(nome);
-	
+		
 		// Metodos String
 		// .charAt
 		char charNaPosicao = nome.charAt(2);
