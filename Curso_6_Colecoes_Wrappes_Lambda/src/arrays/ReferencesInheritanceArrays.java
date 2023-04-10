@@ -22,7 +22,7 @@ public static void main(String[] args) {
 		// Creating References to the Contas Referecnes
 		ContaCorrente refCorrente = (ContaCorrente) accounts[0]; // Cast needed because accounts[] is type Conta
 		
-		System.out.println(accountCorrente.getNumero());
+		System.out.println(refCorrente.getNumero());
 		
 		// Casting the wrong type of Conta
 		try {
@@ -31,6 +31,22 @@ public static void main(String[] args) {
 			System.out.println("ClassCastException Ocurred");
 		}
 		
+		// Creating a Object Array
+		Object[] objects = new Object[2];
+		
+		// Creating Objects of Conta Subclasses
+		ContaCorrente objectCorrente = new ContaCorrente(3, 22);
+		ContaPoupanca objectPoupanca = new ContaPoupanca(4, 22);
+		
+		// Adding the Objects of "Conta Type" to the Array of "Object Type"
+		objects[0] = objectCorrente;
+		objects[1] = objectPoupanca;
+		
+		// Creating a reference to the objectContas
+		ContaCorrente contaReference = (ContaCorrente) objects[0]; // Cast needed because objects[] Type Object
+		System.out.println("I could only use this: " + contaReference.getNumero() + ", because of the Cast.");
+				
+		
+		
 	}
-	
 }
