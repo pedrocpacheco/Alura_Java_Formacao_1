@@ -1,6 +1,0 @@
-package orientacaoObjetos;
-
-public class Conta {
-	int idade;
-	String nome;
-}
