@@ -17,6 +17,12 @@ public class ReferencesArray {
 		
 		// Using a getMethod of by a reference of Conta Object in the array
 		System.out.println("The Account 1 Number Is: " + accounts[0].getNumero());
+		System.out.println("The Account 2 Number Is: " + accounts[1].getNumero());
+	
+		// Creating another referece to a account information
+		int ref = accounts[0].getNumero();
+		System.out.println("Using New Reference (ref): " + ref + " | Using Array Reference (accounts[0]): " + accounts[0].getNumero() + " | Using Creation Reference (account): " + account.getNumero());
+				
 		
 	}
 	
