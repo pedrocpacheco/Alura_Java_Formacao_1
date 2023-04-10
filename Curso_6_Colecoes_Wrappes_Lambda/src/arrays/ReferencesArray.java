@@ -1,5 +1,7 @@
 package arrays;
 
+import arrays.classes.Conta;
+
 public class ReferencesArray {
 
 	public static void main(String[] args) {
