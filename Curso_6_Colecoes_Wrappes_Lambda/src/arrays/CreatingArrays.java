@@ -3,7 +3,7 @@ package arrays;
 public class CreatingArrays {
 	public static void main(String[] args) {
 		
-		int[] ages = new int[5];
+		int[] ages = new int[5]; // OR: int[] ages = new int[5];
 		
 		ages[0] = 17;
 		ages[1] = 18;
@@ -14,7 +14,7 @@ public class CreatingArrays {
 		int ageJoao = ages[2];
 
 		System.out.printf("Pedro's age Is: %d | Luane's age Is: %d | João's age Is: %d", agePedro, ageLuane, ageJoao);
-		System.out.println("\nO tamanho do Array é de: " + ages.length);
+		System.out.println("\nThe Array's Length Is: " + ages.length);
 		
 	}
 

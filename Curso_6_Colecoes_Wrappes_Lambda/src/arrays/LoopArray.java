@@ -10,7 +10,7 @@ public class LoopArray {
 			ages[i] = i*i;
 		}
 		
-		//Printing the age
+		//Printing the age after the *
 		for(int i = 0 ; i < ages.length; i++) {
 			System.out.println("The Current Age Is: " + ages[i]);
 		}
