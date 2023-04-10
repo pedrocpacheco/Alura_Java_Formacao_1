@@ -1,6 +1,6 @@
 package arrays;
 
-public class TesteArrays {
+public class CreatingArrays {
 	public static void main(String[] args) {
 		
 		int[] ages = new int[5];
